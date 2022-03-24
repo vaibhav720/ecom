@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+.special{
+  margin-left: 20px;
+}
+
 .layout_padding {
   padding: 90px 0;
 }

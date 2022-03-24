@@ -1,12 +1,15 @@
 import React from "react";
-import Header from "../Header";
-import Carousel from "../Carousel";
+import Header from "../common/Header";
+import Carousel from "../common/Carousel";
+import Items from "../common/Items";
 
 function Index() {
-  return (<div className="hero_area">
+  return (<div><div className="hero_area">
     
-    <Header /> 
+    
     <Carousel />
+    </div>
+    <Items/>
     </div>
   );
 }

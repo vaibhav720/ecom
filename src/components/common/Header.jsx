@@ -9,7 +9,7 @@ function Header() {
     <header className="header_section">
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg custom_nav-container ">
-          <a className="navbar-brand" href="index.html">
+          <a className="navbar-brand" href="/">
             <span>
               Cart.com
             </span>
@@ -22,23 +22,23 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="index.html">Home <span className="sr-only"></span></a>
+                <a className="nav-link" href="/">Home <span className="sr-only"></span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="product.html"> Products </a>
+                <a className="nav-link" href="/product"> Products </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="about.html"> About </a>
+                <a className="nav-link" href="/about"> About </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="contact.html">Contact Us</a>
+                <a className="nav-link" href="/contact">Contact Us</a>
               </li>
             </ul>
             <div className="user_option-box">
-              <a href="Register.html">
+              <a href="/Register">
                 <i className="fa fa-user" aria-hidden="true"></i>
               </a>
-              <a href="edit-product.html">
+              <a href="/cart">
                 <i className="fa fa-cart-plus" aria-hidden="true"></i>
               </a>
               

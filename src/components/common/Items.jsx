@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../Image/w1.png";
-import img2 from "../Image/w2.png";
-import img3 from "../Image/w3.png";
-import img4 from "../Image/w4.png";
-import img5 from "../Image/w5.png";
-import img6 from "../Image/w6.png";
+import img1 from "../../Image/w1.png";
+import img2 from "../../Image/w2.png";
+import img3 from "../../Image/w3.png";
+import img4 from "../../Image/w4.png";
+import img5 from "../../Image/w5.png";
+import img6 from "../../Image/w6.png";
 
 function Items() {
   return (<section className="shop_section layout_padding">

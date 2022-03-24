@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../Image/slider-img.png";
+import img1 from "../../Image/slider-img.png";
 function Carousel() {
   return (
     <section className="slider_section">
