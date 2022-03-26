@@ -1,8 +1,43 @@
-import React from "react";
+import React, {useState} from "react";
 import img1 from "../../Image/contact-img.jpg";
 
 
-function Register_form () {
+
+function Register_form (props) {
+
+  const [user,setuser] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    password: "",
+    conpassword: "",
+  });
+
+  function handleChange(event){
+    const {name, value} = event.target;
+
+    setuser((prevuser)=>{
+      return {
+        ...prevuser,
+        [name]:value
+      };
+    });
+  }
+
+  function submituser(event){
+    props.onAdd(user);
+    setuser({
+      name: "",
+      password: "",
+      email: "",
+      phone: "",
+      conpassword: ""
+    });
+    event.preventDefault();
+  }
+
+
+
     return <div><section className="contact_section layout_padding">
     <div className="container">
       <div className="row">
@@ -15,19 +50,19 @@ function Register_form () {
             </div>
             <form>
               <div>
-                <input type="text" placeholder="Full Name " />
+                <input type="text" name="name" onChange={handleChange} value={user.name} placeholder="Full Name " />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" name="email" onChange={handleChange} value={user.email} placeholder="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Phone number" />
+                <input type="text" name="phone" onChange={handleChange} value={user.phone} placeholder="Phone number" />
               </div>
               <div>
-                <input type="password" placeholder="Password" />
+                <input type="password" name="password"  onChange={handleChange} value={user.password} placeholder="Password" />
               </div>
               <div>
-                <input type="password" placeholder="Confirm Password" />
+                <input type="password" name="conpassword" onChange={handleChange} value={user.conpassword} placeholder="Confirm Password" />
               </div>
               <div className="d-flex ">
                 <button>

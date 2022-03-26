@@ -2,6 +2,9 @@ import React from "react";
 
 
 function Header() {
+
+
+
   return (
     
     <div >
@@ -31,7 +34,7 @@ function Header() {
                 <a className="nav-link" href="/about"> About </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact Us</a>
+                <a className="nav-link" href="/contactus">Contact Us</a>
               </li>
             </ul>
             <div className="user_option-box">
